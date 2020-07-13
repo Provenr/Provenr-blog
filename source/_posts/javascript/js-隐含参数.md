@@ -1,7 +1,8 @@
 ---
 title: js 隐含参数
+tags: argument
+abbrlink: ba67bbfb
 date: 2018-11-04 20:59:53
-tags: argument 
 ---
 
 ## arguments

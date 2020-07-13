@@ -1,7 +1,10 @@
 ---
 title: python 环境配置
+tags:
+  - python
+  - Anaconda
+abbrlink: d7e5fa43
 date: 2019-07-04 23:38:24
-tags: [python, Anaconda]
 ---
 Windows 环境安装
 

@@ -1,7 +1,10 @@
 ---
 title: vue mock服务
+tags:
+  - vue
+  - mock
+abbrlink: 26fa0902
 date: 2019-06-16 19:22:45
-tags: [vue, mock]
 ---
 使用mockjs的有两种方式
 

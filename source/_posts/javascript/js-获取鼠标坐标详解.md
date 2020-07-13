@@ -1,7 +1,8 @@
 ---
 title: JS来获取鼠标坐标详解
-date: 2019-06-16 18:12:17
 tags: javascript
+abbrlink: 9e397dfc
+date: 2019-06-16 18:12:17
 ---
 ## js 获取鼠标坐标方法：
 

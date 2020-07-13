@@ -1,7 +1,10 @@
 ---
 title: 'js 生成[min,max]范围的 随机数'
+tags:
+  - 随机数
+  - javaScript
+abbrlink: '36350040'
 date: 2019-07-04 23:42:19
-tags: [随机数,javaScript]
 ---
 [TOC]
 # 预备知识

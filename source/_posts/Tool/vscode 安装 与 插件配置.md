@@ -1,8 +1,12 @@
 ---
 title: vscode 安装 与 插件配置
+tags:
+  - vscode
+  - git
+  - sourceTree
+abbrlink: 1a218fe1
 date: 2018-10-20 00:34:19
-tags: [vscode, git, sourceTree]
-description: 
+description:
 ---
 
 

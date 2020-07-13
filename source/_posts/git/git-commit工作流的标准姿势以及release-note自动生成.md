@@ -1,8 +1,9 @@
 ---
 title: git commit 工作流的标准姿势以及 release note 自动生成
-date: 2018-09-24 13:55:20
 tags: git
 categories: git
+abbrlink: ef62dab8
+date: 2018-09-24 13:55:20
 ---
 
 一个项目除了前期的开发任务以外，还有后期的功能迭代维护，面对较为频繁的功能上线和一些繁杂的事情，于是有条不紊地管理我们的 release notes 是一门学问。

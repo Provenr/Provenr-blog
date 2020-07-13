@@ -3,6 +3,7 @@ title: iterm + zsh 打造Mac个性终端
 tags:
   - iterm2
   - 终端
+abbrlink: 6ca2c18
 date: 2020-03-23 20:38:41
 ---
 ## iterm2 安装

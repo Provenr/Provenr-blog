@@ -1,7 +1,10 @@
 ---
 title: docker 部署 Nginx
+tags:
+  - docker
+  - Nginx
+abbrlink: 42bd6d7f
 date: 2019-06-21 11:29:15
-tags: [docker, Nginx]
 ---
 [TOC]
 # docker 部署 nginx

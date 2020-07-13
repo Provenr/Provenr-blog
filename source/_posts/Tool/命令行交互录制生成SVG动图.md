@@ -1,7 +1,10 @@
 ---
 title: 命令行交互录制生成SVG动图
+tags:
+  - asciinema
+  - 命令行录制
+abbrlink: 43da82e3
 date: 2019-05-31 16:05:46
-tags: [asciinema,命令行录制]
 ---
 # 前言
 配置服务器时，操作命令比较多，复杂，为了完整记录你在终端中执行的操作，将其保存以供后续参考学习，发现一个神器[asciinema](https://github.com/asciinema/asciinema)

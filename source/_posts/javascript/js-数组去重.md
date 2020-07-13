@@ -1,7 +1,10 @@
 ---
 title: JavaScript数组去重
+tags:
+  - 数组去重
+  - JavaScript
+abbrlink: b72f19da
 date: 2018-11-04 20:59:53
-tags: [数组去重,JavaScript]
 ---
 ## JavaScript数组去重
 

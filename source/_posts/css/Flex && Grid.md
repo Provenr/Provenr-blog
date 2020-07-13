@@ -1,8 +1,11 @@
 ---
 title: flex && grid 布局
-date: 2019-09-25
-tags: [flex, grid]
-categories: css 
+tags:
+  - flex
+  - grid
+categories: css
+abbrlink: 8c8f9471
+date: 2019-09-25 00:00:00
 ---
 
 

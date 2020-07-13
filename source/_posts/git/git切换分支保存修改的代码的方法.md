@@ -1,8 +1,11 @@
 ---
 title: git切换分支保存修改的代码的方法
-date: 2019-05-15 20:29:26
-tags: [git, git stash]
+tags:
+  - git
+  - git stash
 categories: git
+abbrlink: b72a0472
+date: 2019-05-15 20:29:26
 ---
 
 ![image](https://i.loli.net/2019/05/15/5cdbfb32ba9fc79837.png)

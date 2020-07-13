@@ -1,7 +1,10 @@
 ---
 title: js 滑屏操作反弹原理
+tags:
+  - javascript
+  - touch
+abbrlink: 8f1df276
 date: 2019-06-16 23:53:28
-tags: [javascript, touch]
 ---
 [toc]
 ## 移动端事件

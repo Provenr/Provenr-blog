@@ -1,8 +1,11 @@
 ---
 title: Cordova + vue 开发跨平台应用
+tags:
+  - vue
+  - cordova
+banner: 'https://cordova.apache.org/static/img/cordova-logo-newbrand-textonly.svg'
+abbrlink: 99893ff
 date: 2018-12-06 17:39:25
-tags: [vue, cordova]
-banner: https://cordova.apache.org/static/img/cordova-logo-newbrand-textonly.svg
 ---
 
 ##

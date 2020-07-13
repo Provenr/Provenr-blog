@@ -1,8 +1,11 @@
 ---
 title: 基于fork的git常规操作
-date: 2019-06-11 20:02:21
-tags: [git, fork]
+tags:
+  - git
+  - fork
 categories: git
+abbrlink: c2a98886
+date: 2019-06-11 20:02:21
 ---
 
 ![image](https://i.loli.net/2019/06/11/5cff98b6b918b27168.png)
