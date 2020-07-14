@@ -1,5 +1,11 @@
 ---
-abbrlink: '0'
+title: Nginx 静态服务配置---root和alias指令
+tags:
+  - root指令
+  - alias指令
+categories: Nginx
+abbrlink: 580f12e2
+date: 2020-07-13 16:21:41
 ---
 ## root 指令
 

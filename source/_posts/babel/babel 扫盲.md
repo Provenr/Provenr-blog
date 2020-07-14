@@ -3,6 +3,7 @@ title: babel 扫盲
 tags:
   - babel
   - JavaScript
+categories: babel
 abbrlink: 580f12e2
 date: 2020-03-23 16:21:41
 ---

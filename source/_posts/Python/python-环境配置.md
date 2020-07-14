@@ -4,6 +4,7 @@ tags:
   - python
   - Anaconda
 abbrlink: d7e5fa43
+categories: python
 date: 2019-07-04 23:38:24
 ---
 Windows 环境安装
