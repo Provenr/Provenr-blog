@@ -4,6 +4,7 @@ tags:
   - iterm2
   - 终端
 abbrlink: 6ca2c18
+categories: tool
 date: 2020-03-23 20:38:41
 ---
 ## iterm2 安装

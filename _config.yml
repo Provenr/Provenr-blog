@@ -6,6 +6,7 @@
 title: Provenr
 subtitle:
 description: 没有比脚更长的路，走过去，前面是春天！
+favicon: http://www.provenr.cn/favicon.ico
 keywords: JavaScript, vue, webpack, react, 小程序, nginx
 author: Provenr
 language: zh-CN
@@ -75,10 +76,7 @@ per_page: 1000
 pagination_dir: page
 
 # Disqus
-disqus:
-  enable: true
-  shortname: blog-provenr-cn
-  count: true
+disqus: blog-provenr-cn
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
@@ -91,26 +89,6 @@ deploy:
   type: git
   repository: https://github.com/Provenr/Provenr-blog.git
   branch: master
-
-# siderbar
-jsonContent:
-  meta: true
-  pages: false
-  posts:
-    title: true
-    date: true
-    path: true
-    text: false
-    raw: false
-    content: false
-    slug: false
-    updated: false
-    comments: false
-    link: false
-    # permalink: true
-    excerpt: false
-    categories: true
-    tags: true
 
 # algolia 搜索功能
 algolia:

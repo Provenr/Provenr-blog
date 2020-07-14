@@ -6,6 +6,7 @@
 @import "./post"
 @import "./footer"
 @import "./calendar"
+@import "./sidebar"
 
 .category-list-count:before {
   content: ' '
@@ -14,6 +15,11 @@
 .category-list-count:after {
   content: ' '
 }
+
+.main-container {
+  position: relative
+}
+
 // left bar
 .blog-intro
   width: 25%
@@ -205,7 +211,7 @@
 
       &:first-child
         border-top: none
-      
+
       /* quick fix for #18 */
       padding: 0
 

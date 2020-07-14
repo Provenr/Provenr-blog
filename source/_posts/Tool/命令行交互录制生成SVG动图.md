@@ -4,6 +4,7 @@ tags:
   - asciinema
   - 命令行录制
 abbrlink: 43da82e3
+categories: tool
 date: 2019-05-31 16:05:46
 ---
 # 前言

@@ -1,5 +1,6 @@
 <%
 var publishTimestamp = page.date.valueOf();
+var modifiedTimestamp = page.modified ? page.modified.valueOf() : '';
 %>
 <div class="post-container container">
   <h3>
@@ -8,7 +9,8 @@ var publishTimestamp = page.date.valueOf();
 
     <span class="post-date float-right" title="{{moment(<%= publishTimestamp %>).format('MMM DD, YYYY, h:mm:ss A')}}">
       <i class="fa fa-pencil-square-o"></i>
-      {{moment(<%= publishTimestamp %>).fromNow()}}
+<!--      {{moment(<%= publishTimestamp %>).fromNow()}}-->
+      last modified: {{moment(<%= modifiedTimestamp ? modifiedTimestamp : publishTimestamp %>).fromNow()}}
     </span>
   </h3>
 

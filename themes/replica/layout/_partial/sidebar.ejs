@@ -1,0 +1,7 @@
+<aside class="side-container desktop-only">
+    <% if (page.toc != false) { %>
+        <div id="toc">
+            <%- toc(page.content, {list_number: false}) %>
+        </div>
+    <% } %>
+</aside>

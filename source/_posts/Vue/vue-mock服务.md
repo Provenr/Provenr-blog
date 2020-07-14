@@ -4,6 +4,7 @@ tags:
   - vue
   - mock
 abbrlink: 26fa0902
+categories: Vue
 date: 2019-06-16 19:22:45
 ---
 使用mockjs的有两种方式
