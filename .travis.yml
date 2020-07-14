@@ -6,16 +6,15 @@ cache:
   apt: true
   directories:
     - node_modules
-    - CNAME
 
 before_install:
   - echo 切换yarn淘宝源
-  - yarn config set registry https://registry.npm.taobao.org/
-  - yarn add hexo -g
+#  - yarn config set registry https://registry.npm.taobao.org/
+  - npm install hexo -g
 
 install:
   - echo 安装hexo相关环境
-  - yarn install
+  - npm install
 
 before_script:
   - echo 正在清空缓存静态文件...
