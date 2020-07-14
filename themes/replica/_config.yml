@@ -1,5 +1,5 @@
 # left-side user profile
-avatar: /avatar/provenr.jpg
+avatar: /source/avatar/provenr.jpg
 location: BeiJing,China
 email: web_lyn@163.com
 social:
@@ -17,19 +17,10 @@ rss_dir: atom.xml
 
 # widget
 ga: # google analytics tracking code UA-XXXXXXX-X
-baidutongji: # baidutongji tracking code
+baidutongji: e56a1706ae9d773852a4a03368b51f86
 duoshuo: # duoshuo username
 gsc: # google custom search code
 
-## Disqus
-disqus:
-  enable: true
-  shortname: blog-provenr-cn    #your name
-  count: true
-
-# flagcounter
-flagcounter_href: # https://info.flagcounter.com/xxxx
-flagcounter_img_src: # https://s01.flagcounter.com/xxxx
 
 # ========== newly increased ==========#
 # ========== Search ========== #

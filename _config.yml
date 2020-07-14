@@ -18,9 +18,9 @@ root: /blog/
 permalink: :year/:month/:day/:title/
 # permalink_defaults:
 
-abbrlink:
-  alg: crc32  # 算法 crc16(default) and crc32
-  rep: hex # 进制 dec(default) and hex
+#abbrlink:
+#  alg: crc32  # 算法 crc16(default) and crc32
+#  rep: hex # 进制 dec(default) and hex
 
 # Directory
 source_dir: source
@@ -114,9 +114,9 @@ jsonContent:
 
 # algolia 搜索功能
 algolia:
-  applicationID: 'RXAUERFBC9'
-  apiKey: 'ab84607e1101c08dac65d601aaaba509'
-  indexName: 'Index'
+  applicationID: RXAUERFBC9
+  apiKey: ab84607e1101c08dac65d601aaaba509
+  indexName: Index
   chunkSize: 5000
 
 # SEO搜索
