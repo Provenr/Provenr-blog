@@ -8,6 +8,9 @@ cache:
 before_install:
 - openssl aes-256-cbc -K $encrypted_f31094380f4c_key -iv $encrypted_f31094380f4c_iv
   -in id_rsa.enc -out ~/.ssh/id_rsa -d
+- chmod 600 ~/.ssh/id_rsa
+- echo -e "Host ${G_HOST}\n\tStrictHostKeyChecking no\n\tIdentityFile ~/.ssh/id_rsa"
+  >> ~/.ssh/config
 
 install:
 - npm install hexo -g
