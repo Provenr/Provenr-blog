@@ -37,6 +37,7 @@ env:
   - GH_REF=github.com/Provenr/Provenr.github.io.git
   - GH_username=liuyangning
   - GH_useremail=web_lyn@163.com
+  - G_HOST=119.3.215.227
 after_success:
   - cd ./public/
   - echo 准备移动至指定文件夹到服务器...
