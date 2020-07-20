@@ -25,12 +25,12 @@ before_script:
 - ls -l
 script:
 - echo 开始部署...
-- git init
-- git config --global user.name "${GH_username}"
-- git config --global user.email "${GH_useremail}"
-- git add .
-- git commit -m "update auto by travis CI"
-- git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+#- git init
+#- git config --global user.name "${GH_username}"
+#- git config --global user.email "${GH_useremail}"
+#- git add .
+#- git commit -m "update auto by travis CI"
+#- git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
 after_script:
 - echo 部署完成！
 branches:
@@ -46,3 +46,4 @@ after_success:
   - cd ./public/
   - echo 准备移动至指定文件夹到服务器...
   - travis_wait 30 scp -o stricthostkeychecking=no -rC ./* root@${G_HOST}:/root/provenr-local/blog
+  - echo 部署完成!
