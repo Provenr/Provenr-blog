@@ -1,8 +1,9 @@
 ---
 title: node中间件body-parser
-date: 2020-07-27 20:30:33
 tags: body-parser
 category: node
+abbrlink: 60410
+date: 2020-07-27 20:30:33
 ---
 ## 前言
 body-parser是非常常用的一个express中间件，作用是对post请求的请求体进行解析
@@ -11,9 +12,8 @@ body-parser是非常常用的一个express中间件，作用是对post请求的�
 router.use(bodyParser.json());
 router.use(bodyParser.urlencoded({ extended: false })); // 
 ```
-
 ### bodyParser.json([Options])
-> ##### 解析JSON类型数据
+> 解析JSON类型数据
 
 ### bodyParser.urlencoded([Options])
 > ##### 解析表单类型

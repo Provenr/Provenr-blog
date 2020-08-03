@@ -36,7 +36,7 @@ description:
     
     > 
     
-    > ==**Tips**==: 重启之后语言还不行
+    > `**Tips**`: 重启之后语言还不行
     
     > 安装插件  
     
@@ -109,7 +109,7 @@ description:
 - 查看那些已安装的程序需要更新： brew outdated
 - 显示包依赖：brew reps
 
->###  ==Tips:== 一定要 **开启VPN** 
+>###  `Tips:` 一定要 **开启VPN** 
 
 Homebrew安装成功后，会自动创建目录 /usr/local/Cellar 来存放Homebrew安装的程序。 这时你在命令行状态下面就可以使用 brew 命令了
 
@@ -137,7 +137,7 @@ Homebrew安装成功后，会自动创建目录 /usr/local/Cellar 来存放Homeb
 2. 生存密钥：
 $ ssh-keygen -t rsa -C “xxxx@qq.com”
 
-**==Tips:==**  连续按3个回车，密码为空。
+**`Tips:`**  连续按3个回车，密码为空。
 
 4. 最后得到了两个文件：id_rsa和id_rsa.pub
 
@@ -151,4 +151,4 @@ $ ssh-keygen -t rsa -C “xxxx@qq.com”
 
 [sourceTree 安装使用](https://www.jianshu.com/p/fdbf7c0bca93)
 
-==Tips:== 需要打开VPN 否则无法登陆
+`Tips:` 需要打开VPN 否则无法登陆

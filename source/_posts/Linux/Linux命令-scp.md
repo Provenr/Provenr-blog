@@ -1,9 +1,12 @@
 ---
 title: Linux命令-scp
+tags:
+  - scp
+  - Linux
+category: Linux
+abbrlink: 41503
 date: 2020-07-15 19:21:18
 modified: 2020-07-15 19:21:18
-tags: [scp, Linux]
-category: Linux
 ---
 
 ## SCP命令

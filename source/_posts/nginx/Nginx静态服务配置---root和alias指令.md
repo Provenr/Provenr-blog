@@ -60,5 +60,5 @@ location /blog/ {
 
 /root/provenr-local/blog + test.html
 ```
-这里把url 拆分为 ==/blog/ + test.html==
-替换后的uri 为 ==/root/provenr-local/blogtest.html==， 这是非法的
+这里把url 拆分为 `/blog/ + test.html`
+替换后的uri 为 `/root/provenr-local/blogtest.html`， 这是非法的
