@@ -1,23 +1,33 @@
 figure.highlight
   margin: 0 0 16px 0
   padding: 16px
+  padding-top: 36px
   font-size: 16px
-  line-height: 1.45
-  background-color: $grey-lighter
-  border-radius: 3px
+  line-height: 1.75
+  //background-color: $grey-lighter
+  border-radius: 4px
   word-wrap: normal
+  box-shadow: rgba(0, 0, 0, 0.55) 0px 2px 10px
 
-  pre
-    margin: 0
-    font-size: 85%
 
-  .line
-    height: 20px
-    font-szie: 100%
-    word-break: normal
+  background: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22100%22%20height%3D%2250%22%20viewBox%3D%220%200%2054%2014%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%20transform%3D%22translate(1%201)%22%20stroke-width%3D%22.5%22%3E%3Ccircle%20cx%3D%226%22%20cy%3D%226%22%20r%3D%226%22%20fill%3D%22%23FF5F56%22%20stroke%3D%22%23E0443E%22%2F%3E%3Ccircle%20cx%3D%2226%22%20cy%3D%226%22%20r%3D%226%22%20fill%3D%22%23FFBD2E%22%20stroke%3D%22%23DEA123%22%2F%3E%3Ccircle%20cx%3D%2246%22%20cy%3D%226%22%20r%3D%226%22%20fill%3D%22%2327C93F%22%20stroke%3D%22%231AAB29%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-color: #fafafa;
+  background-position: 16px 8px;
+  text-shadow: rgb(238, 232, 213) 0px 1px !important;
 
-  .gutter
-    display: none
+pre
+  margin: 0
+  font-size: 85%
+
+.line
+  height: 20px
+  font-szie: 100%
+  word-break: normal
+
+.gutter
+  display: none
 
 pre
   margin-top: 0;
@@ -29,7 +39,7 @@ pre
   font-weight: normal;
   font-stretch: normal;
   font-size: 12px;
-  line-height: normal;
+  line-height: 1.75;
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
   @media (max-width: $screen-sm)
     font-family: Consolas, "Liberation Mono", Courier, monospace
@@ -45,7 +55,7 @@ pre
     color: #969896
 
   .string, .variable, .template-variable, .strong, .emphasis, .quote
-    color: #df5000
+    color: #50a14f
 
   .keyword, .selector-tag, .type
     color: #a71d5d
