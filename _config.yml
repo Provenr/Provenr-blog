@@ -76,7 +76,8 @@ per_page: 1000
 pagination_dir: page
 
 # Disqus
-disqus: blog-provenr-cn
+# TODO: 没有 VPN 造成访问失败
+# disqus: blog-provenr-cn
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
