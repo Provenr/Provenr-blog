@@ -4,7 +4,7 @@ tags:
   - Travis CI
   - ssh
 categories:
-  - 持续集成
+  - 工程化
 date: 2019-05-24 15:15:42
 modified: 2020-08-13 10:34:14
 ---
