@@ -66,5 +66,18 @@ var y = 5;
 x ??= y  // x => 5
 
 等价于 x ?? (x = y)
+
+// 与函数参数默认值的区别
+function gamesettingswithnullish(options){
+  options.gamespeed ??=1;
+  options.gamediff ??= 'easy';
+  return options
+}
+  
+function gamesettingswithdefaultparams(gamespeed=l, gamediff="easy"){
+  return {gamespeed, gamediff}
+}
+gamesettingswithnullish(null) // {gamespeed: 1, gamediff: 'easy'}
+gamesettingswithdefaultparams(null) // {gamespeed: null, gamediff: null}
 ```
 
