@@ -17,7 +17,7 @@ Multirepo 是比较传统的做法，即每一个 package 都单独用一个仓�
 
 Monorep 是把所有相关的 package 都放在一个仓库里进行管理，**每个 package 独立发布**。如[vue-cli](https://github.com/vuejs/vue-cli)
 
-![image](http://img.provenr.cn/blog/2020-10-16%2011-11-35.png)
+![image](https://provenr.obs.cn-north-4.myhuaweicloud.com/blog/2020-10-16%2011-11-35.png)
 
 ### Multirepo 痛点
 

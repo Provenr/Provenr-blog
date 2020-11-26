@@ -24,7 +24,7 @@ date: 2020-08-06 16:02:47
 
 #### 对比
 
-![image](http://img.provenr.cn/blog/2020-8-6%2018-9-48.png)
+![image](https://provenr.obs.cn-north-4.myhuaweicloud.com/blog/2020-8-6%2018-9-48.png)
 
 1. **IMAP**提供的摘要浏览功能可以让你在阅读完所有的邮件到达时间、主题、发件人、大小等信息后才作出是否下载的决定。
 2. **IMAP** 更好地支持了从多个不同设备中随时访问新邮件
