@@ -91,6 +91,10 @@ Object.keys({}) // 返回对象自身可枚举属性组成的数组
 if (Object.keys(object).length === 0) {
     return false // 如果为空,返回false
 }
+
+// 使用 Reflect.OwnKeys()
+const isEmpty = obj => Reflect.ownKeys(obj).length === 0 && obj.constructor === Object;
+
 ```
 
 
@@ -126,7 +130,7 @@ Object.prototype.toString.call([]) ; // [object Array]
 Object.prototype.toString.call(newRegExp()) ; // [object RegExp]
 Object.prototype.toString.call(newError()) ; // [object Error]
 Object.prototype.toString.call(document) ; // [object HTMLDocument]
-Object.prototype.toString.call(window) ; //[object global] window 是全局对象 global 的引用
+Object.prototype.toString.call(window) ; //[object Window] 
 
 // 正则匹配 类型的字符串
 function type(obj) {
