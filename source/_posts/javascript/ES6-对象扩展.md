@@ -1,7 +1,16 @@
+---
+title: ES6 对象扩展
+tags: javaScript
+categary: ES6
+date: 2021-01-17 10:37:54
+Modified: 2021-01-19 10:40:13
+---
+
 # ES6  对象的扩展
+
 ## 一、属性的简写
 ### 1. 属性、方法的简写
-```
+```javascript
 let foo = 'foo';
 const baz = {
 		foo,
@@ -18,7 +27,7 @@ const baz = {
 ```
 ### 2. 函数的返回值
 > 适用模块输出一组变量
-```
+```javascript
 function getPoint() {
   const x = 1;
   const y = 10;
@@ -44,7 +53,7 @@ module.exports = {
 }
 ```
 ### 3. 属性的赋值器（setter）和取值器（getter）
-```
+```javascript
 const cart = {
   _wheels: 4,
 
@@ -61,7 +70,7 @@ const cart = {
 }
 ```
 ### 4. 简写的对象方法不能用作构造函数，会报错。
-```
+```javascript
 const obj = {
   f() {
     this.foo = 'bar';
@@ -72,7 +81,7 @@ new obj.f() // 报错 obj.f is not a constructor
 ```
 ## 二、属性名表达式
 ### 1、定义对象的属性
-```
+```javascript
 // 方法一 是直接用标识符作为属性名
 obj.foo = 'foo';
 
@@ -80,7 +89,7 @@ obj.foo = 'foo';
 obj['a' + 'bc'] = 123;
 ```
 ### 2、表达式还可以用于定义方法名
-```
+```javascript
 let obj = {
   ['h' + 'ello']() {
     return 'hi';
@@ -89,7 +98,7 @@ let obj = {
 obj.hello() // hi
 ```
 > 注意，属性名表达式与简洁表示法，不能同时使用，会报错。
-```
+```javascript
 const baz = {bar: 'abc'}
 // 报错
 const foo = 'bar';
@@ -100,7 +109,7 @@ const baz = { [foo] };
 const baz = { [foo]: bar};
 ```
 ### 3、属性名表达式如果是一个对象，自动将对象转为字符串[object Object]，
-```
+```javascript
 const keyA = {a: 1};
 
 const myObject = {
@@ -111,7 +120,7 @@ myObject // Object {[object Object]: "valueA"}
 ```
 ## 三、对象方法的 name 属性
 > 函数的name属性，返回函数名, 对象方法也是函数，name属性返回函数名
-```
+```javascript
 const person = {
   sayName() {
     console.log('hello!');
@@ -122,7 +131,7 @@ person.sayName.name  // 'sayName'
 
 ```
 ### 1、取值函数（getter）和存值函数（setter）
-```
+```javascript
 // 对象的方法使用了取值函数（getter）和存值函数（setter）
 const obj = {
   get foo() {},
@@ -135,7 +144,7 @@ descriptor.get.name // "get foo"
 descriptor.set.name // "set foo"
 ```
 ### 2、bind方法创造的函数，Function构造函数创造的函数
-```
+```javascript
 // 构造函数
 (new Function()).name // "anonymous"
 
@@ -144,7 +153,7 @@ var doSomething = function() {};
 doSomething.bind().name // "bound doSomething"
 ```
 ### 3、 含有 Symbol 值，name属性返回的是这个 Symbol 值的描述
-```
+```javascript
 const key1 = Symbol('description');
 let obj = {
   [key1]() {},
@@ -153,7 +162,7 @@ obj[key1].name // "[description]"
 ```
 ## 四、super 关键字
 this关键字总是指向函数所在的当前对象，super关键字，指向当前`对象的原型对象`
-```
+```javascript
 const proto = {
   foo: 'foo
 };
@@ -172,14 +181,14 @@ obj.find() // "foo2"
 ```
 ## 五、扩展运算符
 ### 1、解构赋值
-```
+```javascript
 let { x, y, ...z } = { x: 1, y: 2, a: 3, b: 4 };
 x // 1
 y // 2
 z // { a: 3, b: 4 }
 ```
 ### 2、解构赋值浅拷贝
-```
+```javascript
 let obj = { a: { b: 1 } };
 let { ...x } = obj;
 
@@ -194,7 +203,7 @@ obj.a.b // 2
 ### 1、对象属性的描述对象（Descripter）
 > Object.getOwnPropertyDescriptor(obj, prop)  // 获取
 > Object.defineProperty(obj, prop, descriptor)  // 设置
-```
+```javascript
 let obj = { foo: 123 };
 Object.getOwnPropertyDescriptor(obj, 'foo')
 //  {
@@ -210,7 +219,7 @@ descriptor 是一个对象，对象里的属性描述符有两种类型：`数�
 
 描述符同时有(value或writable) 和 (get或set)关键字，将会产生一个异常
 
-```
+```javascript
 
 Object.defineProperty(obj, "newDataProperty", {
     value: 101, // 设置值
@@ -266,7 +275,7 @@ Object.defineProperty(obj, "newDataProperty", {
 
   区别在于 `+0` 不等于 `-0` ，`NaN`等与自身
 
-  ```
+  ```javascript
   +0 === -0 //true
   NaN === NaN // false
   
@@ -276,7 +285,7 @@ Object.defineProperty(obj, "newDataProperty", {
 
 - Object.assign() // 忽略`enumerable`为`false`的属性，只拷贝对象自身的可枚举的属性。`浅拷贝`，遇到`同名属性会进行替换`
 
-  ```
+  ```javascript
   const target = { a: 1, b: 1 };
   
   const source1 = { b: 2, c: 2 };
@@ -291,7 +300,7 @@ Object.defineProperty(obj, "newDataProperty", {
 
 - Object.keys()，Object.values()，Object.entries()
 
-  ```
+  ```javascript
   const obj = { foo: 'bar', baz: 42 };
   
   Object.keys(obj)
@@ -308,7 +317,7 @@ Object.defineProperty(obj, "newDataProperty", {
 
 - Object.fromEntries() // 用于将一个键值对数组转为对象
 
-  ```
+  ```javascript
   Object.fromEntries([
     ['foo', 'bar'],
     ['baz', 42]
@@ -324,7 +333,7 @@ Object.defineProperty(obj, "newDataProperty", {
 
 	三元操作符 赋值操作
 
-```javascript
+```javascriptjavascript
 var budget =0
 var transportion = (budget >0)? Train : Walking
 console.log(transportion) // Walking
