@@ -1,5 +1,5 @@
 # ES6  对象的扩展
-## 属性的简写
+## 一、属性的简写
 ### 1. 属性、方法的简写
 ```
 let foo = 'foo';
@@ -70,7 +70,7 @@ const obj = {
 new obj.f() // 报错 obj.f is not a constructor
 
 ```
-## 属性名表达式
+## 二、属性名表达式
 ### 1、定义对象的属性
 ```
 // 方法一 是直接用标识符作为属性名
@@ -109,7 +109,7 @@ const myObject = {
 
 myObject // Object {[object Object]: "valueA"}
 ```
-## 对象方法的 name 属性
+## 三、对象方法的 name 属性
 > 函数的name属性，返回函数名, 对象方法也是函数，name属性返回函数名
 ```
 const person = {
@@ -151,7 +151,7 @@ let obj = {
 };
 obj[key1].name // "[description]"
 ```
-## super 关键字
+## 四、super 关键字
 this关键字总是指向函数所在的当前对象，super关键字，指向当前`对象的原型对象`
 ```
 const proto = {
@@ -170,7 +170,7 @@ obj.find() // "foo"
 obj.__proto__ = {foo: 'foo2'};
 obj.find() // "foo2"
 ```
-## 扩展运算符
+## 五、扩展运算符
 ### 1、解构赋值
 ```
 let { x, y, ...z } = { x: 1, y: 2, a: 3, b: 4 };
@@ -190,7 +190,7 @@ obj.a.b // 2
 
 // 等同 Object.assgin(x, obj)
 ```
-## 属性的遍历
+## 六、属性的遍历
 ### 1、对象属性的描述对象（Descripter）
 > Object.getOwnPropertyDescriptor(obj, prop)  // 获取
 > Object.defineProperty(obj, prop, descriptor)  // 设置
@@ -258,7 +258,7 @@ Object.defineProperty(obj, "newDataProperty", {
 - 其次遍历所有`字符串键`，按照加入时间`升序排列`。
 - 最后遍历所有`Symbol 键`，按照加入时间`升序排列`。
 
-## 对象新增的方法
+## 七、对象新增的方法
 
 - Object.is()
 
@@ -316,5 +316,80 @@ Object.defineProperty(obj, "newDataProperty", {
   // { foo: "bar", baz: 42 }
   ```
 
-  
+## 八、对象操作符
 
+### 1. ? 操作符
+
+####  	`三元运算符 < ? >` , 需要三个操作数 ,一个条件为真时要执行的表达式，以及一个条件为假时要执行的表达式。
+
+	三元操作符 赋值操作
+
+```javascript
+var budget =0
+var transportion = (budget >0)? Train : Walking
+console.log(transportion) // Walking
+
+// 
+function nullishAssignment(x, y) {
+  return (x == null || x == undefined) ? y : x
+} 
+```
+
+
+
+### 2. ?. 操作符
+
+#### 	`可选的链式操作符 < ?.>` 读取深嵌在对象链中的属性值，而不必显式验证每个引用。当一个引用为空时，表达式停止计算并返回一个未定义的值。	
+
+```javascript
+var travelPlans = {
+	destination: 'DO',
+  monday: {
+		Location: 'National Mall',
+    budget: 200
+  }
+}
+const tuesdayPlans = travelPlans.tuesday?.location
+console.log(tuesdayPlans)
+
+```
+
+### 3. ?? 操作符
+
+#### `零合并操作符（nullish coalescing）< ?? >` 如果第一个参数不是null/undefined，这个运算符将返回第一个参数，否则，它将返回第二个参数。
+
+```javascript
+var x = null;
+var y = 5;
+var s = x ?? y  // s => 5
+
+// 与 OR 逻辑的区别
+s = 0 || y // s => 5
+s = null || y // s => 5
+
+```
+
+### 4. ??= 操作符
+
+#### 逻辑空值赋值运算符< ??= > 只有在当前值为空或未定义的情况下才会赋一个新的值
+
+```javascript
+var x = null;
+var y = 5;
+x ??= y  // x => 5
+
+等价于 x ?? (x = y)
+
+// 与函数参数默认值的区别
+function gamesettingswithnullish(options){
+  options.gamespeed ??=1;
+  options.gamediff ??= 'easy';
+  return options
+}
+  
+function gamesettingswithdefaultparams(gamespeed=l, gamediff="easy"){
+  return {gamespeed, gamediff}
+}
+gamesettingswithnullish(null) // {gamespeed: 1, gamediff: 'easy'}
+gamesettingswithdefaultparams(null) // {gamespeed: null, gamediff: null}
+```
